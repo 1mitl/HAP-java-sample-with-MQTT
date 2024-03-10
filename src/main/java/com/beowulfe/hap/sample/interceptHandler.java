@@ -143,6 +143,7 @@ public class interceptHandler implements InterceptHandler {
                 .payload(Unpooled.copiedBuffer(content, CharsetUtil.UTF_8))
                 .build();
         mqttServer.internalPublish(specialMessage, "ESP32Client");
+        System.out.println("Published");
     }
 
     @Override

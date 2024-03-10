@@ -82,7 +82,7 @@ public class Main {
 
             /* Ids can be generated automatically or added manually -Mit */
             // TODO: create global ids for devices
-            bridge.addAccessory(new MockSwitch("Test", 2));
+            //bridge.addAccessory(new MockSwitch("Test", 2));
             //bridge.addAccessory(new MockSwitch("Led"));
 
             bridge.addAccessory(new mqttLed(mqttServer, mqttDeviceInstance, "LED", "led", 4));
